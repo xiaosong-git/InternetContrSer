@@ -1,0 +1,40 @@
+#main{
+    border: 10px outset orange;
+    margin: 30px auto;
+    background: #ABABAB;
+    box-shadow: 5px 5px #CCCCCC inset;
+    padding-top: 20px;
+}/*设置最外层表格样式*/
+th{
+    height: 40px;
+    border: 2px outset #CCCCCC;        
+}
+#result{
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px #CCCCCC inset;
+    text-align: right;
+    font-size: 20px;
+}
+[type=button]{
+    width: 60px;
+    height: 40px;
+    box-shadow: 3px 3px #CCCCCC,3px 3px #CCCCCC inset;
+    background-image:linear-gradient(to top right,#000,#fff);/*设置按钮渐变色*/
+    color: #00FFFF;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 10px/6px;
+}/*设置所有butto的样式*/
+#table1,#table2,#table3{
+    margin-top: 20px;
+    border: 2px outset #CCCCCC;    
+}
+[type=button]:hover{
+    background-image:linear-gradient(to top right,#fff,#000);
+}
+#time{
+    margin: 0;
+    padding: 0;
+    color:#00FFFF;
+}

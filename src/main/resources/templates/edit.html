@@ -1,0 +1,49 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+	<div class="main">
+		<!-----start-main---->
+		<div class="inset">
+			<div class="social-icons">
+				<div class="span">
+					<a th:href="@{addDevice}"><i>添加通道</i> </a>
+				</div>
+				<div class="span1">
+					<a th:href="@{updatesb}"><i>修改通道</i></a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<form action="./edit" accept-charset="utf-8" th:object="${code}" method="post">
+			<input type="hidden" name="deviceId" th:value="*{deviceId}" />
+			<div class="lable">
+				<input type="text" th:value="*{devicename}" name="devicename" title="通道编号">
+				<input type="text" th:value="*{turnover}" name="turnover" title="进出">
+			</div>
+			<div class="lable">
+				<input type="text"  th:value="*{deviceip}" name="deviceip" title="设备ip地址"> 
+				<input type="text"  th:value="*{deviceport}" name="deviceport" title="设备端口">
+			</div>
+			<div class="lable-2">
+				<input type="text" th:value="*{reader}" name="reader" title="读头标识"> 
+			</div>
+			<div class="clear"></div>
+			
+			<div class="submit">
+				<input type="submit"  value="修改">
+			</div>
+			<div class="clear"></div>
+		</form>
+		<!-----//end-main---->
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<script>
+</script>
+
+	<br/><br/><br/><br/><br/>
+	<div class="main">
+		<!-- 
+		<div class="inset">
+			<div class="social-icons">
+				<div class="span">
+					<a th:href="@{addDevice}"><i>添加通道
+					</i> </a>
+				</div>
+				<div class="span1">
+					<a th:href="@{updatesb}"><i>修改通道</i>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div> -->
+		<form action="toInit" accept-charset="utf-8" method="post">
+			
+			<div class="lable-2">
+					<div style="color:white" >Key:</div>
+				<input type="text" class="text" name="key"> 
+					<div style="color:white">Value:</div>
+				<input type="password" class="text" name="value">
+			</div>
+			<div class="clear"></div>
+			<br/>
+			<div class="submit">
+				<input type="submit"  value="初始化">
+			</div>
+			<div class="clear"></div>
+		</form>
+		<!-----//end-main---->
+	</div>
+
+
+
+</body>
+</html>

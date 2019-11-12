@@ -1,0 +1,89 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+
+<body>
+	<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+table.gridtable {
+	font-family: verdana, arial, sans-serif;
+	font-size: 18px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+</style>
+	<div class="main">
+		<!-----start-main---->
+		<div class="inset">
+			<div class="social-icons">
+				<div class="span">
+					<a th:href="@{addDevice}"><i>添加通道
+					</i> </a>
+				</div>
+				<div class="span1">
+					<a th:href="@{updatesb}"><i>修改通道</i> </a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		</br>
+		</br>
+		<div align="center">
+			<table class="gridtable" >
+				<thead>
+					<tr>
+						<th>通道编号</th>
+						<th>进出</th>
+						<th>读头标识</th>
+						
+						<th>设备ip</th>
+						<th>设备端口</th>
+						<th>修改操作</th>
+						<th>删除操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each ="i:${tb}">
+						<td th:text = "${i.devicename}"></td>
+						<td th:text = "${i.turnover}"></td>
+						<td th:text = "${i.reader}"></td>
+					
+						<td th:text = "${i.deviceip}"></td>
+						<td th:text = "${i.deviceport}"></td>
+						<td><a th:href="@{/toEdit(id=${i.deviceId})}">修改</a></td>
+						<td><a th:href="@{/delete(id=${i.deviceId})}">删除</a></td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+		<!-----//end-main---->
+	</div>
+
+
+
+</body>
+</html>

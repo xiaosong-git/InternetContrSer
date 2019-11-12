@@ -1,0 +1,73 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<script>
+
+
+
+</script>
+	<div class="main">
+		<!-----start-main---->
+		<div class="inset">
+			<div class="social-icons">
+				<div class="span">
+					<a th:href="@{addDevice}"><i>添加通道
+					</i> </a>
+				</div>
+				<div class="span1">
+					<a th:href="@{updatesb}"><i>修改通道</i>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<form action="./savesb" accept-charset="utf-8" method="post">
+			<h2>
+					继电器添加
+			</h2>
+			<div class="lable-2">
+				<input type="text" class="text" value="继电器编号Id"
+					name="deviceId" >
+				
+			</div>
+			<div class="lable-2">
+				<input type="text" class="text" value="进出：in or out"
+					name="inorout" >
+			</div>
+			<div class="lable-2">
+				<input type="text" class="text" value="读头编号Id"
+					name="reader" >
+			</div>
+			<div class="lable-2">
+				<input type="text" class="text" value="通道：1,2,3,4"
+					name="pass" >
+			</div>
+			<div class="lable">
+				<input type="text" class="text" value="设备IP"
+					name="sbip" > 
+				<input type="text" class="text"value="设备端口" 
+					name="sbport" >
+			</div>
+
+			<div class="clear"></div>
+			<div class="submit">
+				<input type="submit"  value="创建">
+			</div>
+			<div >
+				<a th:href="@{orgset}"><i>大楼设置</i>
+				</a>
+			</div>
+			<div class="clear"></div>
+		</form>
+		<!-----//end-main---->
+	</div>
+
+</body>
+</html>

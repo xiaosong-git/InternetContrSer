@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>计算器</title>
+<link rel="stylesheet" type="text/css"
+	th:href="@{css/deviceController.css}" />
+
+</head>
+<body>
+	<form action="">
+		<table border="0" cellspacing="0" cellpadding="" id='main'>
+			<tr>
+				<th id='time'></th>
+				<th><input type="text" name="" id="result" value="0" /></th>
+			</tr>
+			<tr>
+				<td>
+					<table id="table1">
+						<tr>
+							<td><input type="button" name="" id="" value="sin"
+								onclick="calc1('sin')" /></td>
+							<td><input type="button" name="" id="" value="cos"
+								onclick="calc1('cos')" /></td>
+							
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="asin"
+								onclick="calc1('asin')" /></td>
+							<td><input type="button" name="" id="" value="acos"
+								onclick="calc1('acos')" /></td>
+							
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="PI"
+								onclick="calc1('PI')" /></td>
+							<td><input type="button" name="" id="" value="1/X"
+								onclick="calc1('1/x')" /></td>
+							
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="Inx"
+								onclick="calc1('Inx')" /></td>
+							<td><input type="button" name="" id="" value="lgx"
+								onclick="calc1('lgx')" /></td>
+							
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table id="table2">
+						<tr>
+							<td><input type="button" name="" id="" value="7"
+								onclick="num(7)" /></td>
+							<td><input type="button" name="" id="" value="8"
+								onclick="num(8)" /></td>
+							
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="4"
+								onclick="num(4)" /></td>
+							<td><input type="button" name="" id="" value="5"
+								onclick="num(5)" /></td>
+							
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="1"
+								onclick="num(1)" /></td>
+							<td><input type="button" name="" id="" value="2"
+								onclick="num(2)" /></td>
+							
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="0"
+								onclick="num(0)" /></td>
+							<td><input type="button" name="" id="" value="."
+								onclick="dian()" /></td>
+							
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table id="table3">
+						<tr>
+							<td><input type="button" name="" id="" value="+"
+								onclick="calc('+')" /></td>
+							<td><input type="button" name="" id="" value="取整"
+								onclick="calc('取整')" /></td>
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="-"
+								onclick="calc('-')" /></td>
+							<td><input type="button" name="" id="" value="取余"
+								onclick="calc('%')" /></td>
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="*"
+								onclick="calc('*')" /></td>
+							<td><input type="button" name="" id="" value="x^y"
+								onclick="calc('x^y')" /></td>
+						</tr>
+						<tr>
+							<td><input type="button" name="" id="" value="/"
+								onclick="calc('/')" /></td>
+							<td><input type="button" name="" id="" value="+/-"
+								onclick="calc('+/-')" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
